@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                        // 最新のJavaScript機能を使えるように
+    "module": "ESNext",                        // Node.jsのESM対応
+    "moduleResolution": "Node",
+    "rootDir": "src",                          // .tsファイルのルート
+    "outDir": "dist",                          // .js出力先（← dist/ にまとめる）
+    "esModuleInterop": true,                   // import/export 互換性
+    "forceConsistentCasingInFileNames": true,  // ファイル名の大文字小文字を厳密に
+    "strict": true,                            // 型チェックを厳格に
+    "skipLibCheck": true,                      // 型定義ファイルのチェックをスキップ（高速化）
+    "sourceMap": true,                         // デバッグ用に .map ファイルも出力
+    "resolveJsonModule": true,                 // JSONのimportを可能に
+    "types": ["node"]                          // Node.js のグローバル型を有効に
+  },
+  "include": ["src"],                          // 対象ソースコード
+  "exclude": ["node_modules", "dist"]          // ビルドや依存先は除外
+}
+
+

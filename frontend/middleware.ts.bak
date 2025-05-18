@@ -1,0 +1,33 @@
+// frontend/middleware.ts
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
+
+export function middleware(req: NextRequest) {
+  const { pathname } = req.nextUrl;
+
+  // ✅ /admin/login はスルー（認証不要）
+  if (pathname === "/admin/login") {
+    return NextResponse.next();
+  }
+
+  // ✅ /admin 配下は認証チェック
+  if (pathname.startsWith("/admin")) {
+    const token = req.cookies.get("token")?.value;
+
+    if (!token) {
+      // 認証されてないなら 404 ページへリライト
+      return NextResponse.rewrite(new URL("/404", req.url));
+    }
+  }
+
+  // 他はスルー
+  return NextResponse.next();
+}
+
+export const config = {
+  matcher: [
+    // ✅ /admin 配下で /login を除外
+    "/admin/:path((?!login).*)",
+  ],
+};
+
