@@ -1,0 +1,144 @@
+# =========================
+# 全体共通
+# =========================
+
+# 環境変数 / シークレットファイル
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# OS 固有ファイル
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / エディタ
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ログ / キャッシュ / 一時ファイル
+*.log
+logs/
+*.tmp
+*.swp
+*~
+
+# Docker 関連（一時ファイルやオーバーライド設定など）
+docker-compose.override.yml
+*.env.docker
+
+# coverage / テストキャッシュ
+.coverage
+coverage.*
+htmlcov/
+.tox/
+.nox/
+.cache/
+.pytest_cache/
+
+# ビルド成果物 / ディストリビューション
+build/
+dist/
+*.egg-info/
+*.egg
+*.whl
+
+# =========================
+# フロントエンド（frontend/）
+# =========================
+
+# Node.js の依存モジュール
+/frontend/node_modules/
+/frontend/.pnp
+/frontend/.pnp.*
+/frontend/.yarn/*
+!/frontend/.yarn/patches
+!/frontend/.yarn/plugins
+!/frontend/.yarn/releases
+!/frontend/.yarn/versions
+
+# Next.js
+/frontend/.next/
+/frontend/out/
+
+# Vercel
+frontend/.vercel
+
+# TypeScript ビルドキャッシュ
+/frontend/*.tsbuildinfo
+/frontend/next-env.d.ts
+
+# ESLint / Prettier キャッシュ
+/frontend/.eslintcache
+/frontend/.prettierrc.cache
+
+# Yarn Berry (v2+) Git 管理外ディレクトリ
+/frontend/.yarn/cache
+/frontend/.yarn/unplugged
+/frontend/.yarn/build-state.yml
+/frontend/.yarn/install-state.gz
+
+# npm / yarn デバッグログ
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+/frontend/.pnpm-debug.log*
+
+# =========================
+# バックエンド（backend/）
+# =========================
+
+# Python バイトコード / 強化ファイル
+/backend/__pycache__/
+/backend/*.py[cod]
+/backend/*$py.class
+
+# C extensions
+/backend/*.so
+
+# 仮想環境ディレクトリ
+/backend/env/
+/backend/venv/
+/backend/.venv/
+/backend/ENV/
+/backend/env.bak/
+/backend/venv.bak/
+
+# Flask instance フォルダ
+/backend/instance/
+
+# Alembic マイグレーションキャッシュ（存在する場合）
+/backend/alembic/versions/__pycache__/
+
+# Distribution / packaging
+/backend/build/
+/backend/dist/
+/backend/develop-eggs/
+/backend/downloads/
+/backend/eggs/
+/backend/.eggs/
+/backend/lib/
+/backend/lib64/
+/backend/parts/
+/backend/sdist/
+/backend/var/
+/backend/*.egg-info/
+/backend/.installed.cfg
+
+# SQLite / ローカルデータベースファイル（不要であれば）
+/backend/*.db
+/backend/*.sqlite3
+
+# 秘密鍵 / 証明書
+/backend/*.key
+/backend/*.pem
+/backend/config/secrets.json
+
+# pytest / Flask-Testing キャッシュ
+/backend/.pytest_cache/
+/backend/htmlcov/
+/backend/cover/
+

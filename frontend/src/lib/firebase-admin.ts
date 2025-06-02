@@ -11,7 +11,7 @@ if (!FIREBASE_PROJECT_ID || !FIREBASE_CLIENT_EMAIL || !FIREBASE_PRIVATE_KEY) {
   throw new Error("❌ Firebase Admin SDK 用の環境変数が未定義です");
 }
 
-// Firebase Admin SDK の初期化（複数回防止）
+// Firebase Admin SDK の初期化（再初期化防止）
 if (!admin.apps.length) {
   admin.initializeApp({
     credential: admin.credential.cert({
@@ -22,7 +22,7 @@ if (!admin.apps.length) {
   });
 }
 
-// IDトークンの検証関数（APIルートやミドルウェアで使用）
+// IDトークンの検証関数（ミドルウェアやAPIルートで使用）
 export async function verifyIdToken(token: string) {
   try {
     const decodedToken = await admin.auth().verifyIdToken(token);

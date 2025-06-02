@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Providers from "./provider.tsx";
+
 const geistSans = Geist({
   subsets: ["latin"],
   variable: "--font-geist-sans",
@@ -26,11 +26,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Providers>{children}</Providers>
-      </body>
+      <body className="relative">
+  <div className="absolute inset-0 animate-bgfade z-[-1]"></div> 
+  <div className="relative z-10"> 
+    {children}
+  </div>
+</body>
     </html>
   );
 }
+
+
+
 
 

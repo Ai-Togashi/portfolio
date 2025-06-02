@@ -1,14 +1,30 @@
 {
     "cSpell.words": [
+        "bgfade",
+        "chichiku",
+        "chochiku",
+        "chokoku",
         "Consolas",
+        "eslintcache",
+        "firebaseapp",
         "focusring",
+        "htmlcov",
         "Menlo",
         "minmax",
+        "nosetests",
         "Noto",
         "nowrap",
         "oklab",
         "optgroup",
+        "pycache",
+        "pypackages",
+        "pytest",
         "samp",
-        "Segoe"
+        "sdist",
+        "Segoe",
+        "shadcn",
+        "sunabar",
+        "venv",
+        "Werkzeug"
     ]
 }

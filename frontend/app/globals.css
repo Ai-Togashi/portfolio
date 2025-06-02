@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes bgfade {
+  0% { background-color: #fefce8; }
+  25% { background-color: #ecfccb; }
+  50% { background-color: #e0f2fe; }
+  75% { background-color: #fae8ff; }
+  100% { background-color: #fefce8; }
+}
+
+.animate-bgfade {
+  animation: bgfade 20s ease-in-out infinite;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+

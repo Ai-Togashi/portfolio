@@ -1,12 +1,104 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- C extensions ---
+*.so
+
+# --- Distribution / packaging ---
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.whl
+
+# --- Flask / Werkzeug の instance フォルダ ---
+/instance/
+
+# --- Migrations のマイグレーションスクリプトはコミットすべきだが、生成キャッシュを除外したい場合 ---
+# Alembic のキャッシュディレクトリ（存在する場合）
+/alembic/versions/__pycache__/
+
+# --- Flask-Testing / pytest キャッシュ ---
+htmlcov/
+.tox/
+.nox/
+.cache/
+.pytest_cache/
+cover/
+coverage.*
+nosetests.xml
+coverage.xml
+*,cover
+
+# --- 環境変数 / シークレットファイル ---
+.env
+.env.local
+.env.*.local
+/config/config.json
+config/secrets.json
+
+# --- IDE / エディタ関連 ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS 固有ファイル ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- ログ / 一時ファイル ---
+*.log
+logs/
+*.tmp
+*.swp
+*~
+
+# --- Docker 関連 ---
+docker-compose.override.yml
+*.env.docker
+
+# --- SQLAlchemy / SQLite データベースファイル（必要に応じて） ---
+# SQLite を使っている場合は、ローカルデータベースファイルを無視する
+*.db
+*.sqlite3
+
+# --- Coverage reports ---
+coverage/
+*.cover
+htmlcov/
+
+# --- Secret key / credentials ---
+*.key
+*.pem
+
+# --- その他、不要なキャッシュファイルなど ---
+pip-wheel-metadata/
+__pypackages__/
+
+
 # Node.js
 node_modules
 dist/
 build/
-
-# Environment variables
-.env
-.env.local
-.env.*.local
 
 # Prisma (optional)
 prisma/dev.db
@@ -21,8 +113,7 @@ prisma/generated/
 .vscode/
 .DS_Store
 
-# Docker
-docker-compose.override.yml
+
 
 
 
