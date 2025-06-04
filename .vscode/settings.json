@@ -9,6 +9,7 @@
         "firebaseapp",
         "focusring",
         "htmlcov",
+        "kakeibo",
         "Menlo",
         "minmax",
         "nosetests",
@@ -24,6 +25,7 @@
         "Segoe",
         "shadcn",
         "sunabar",
+        "Togashi",
         "venv",
         "Werkzeug"
     ]

@@ -27,7 +27,7 @@ logs/
 *~
 
 # Docker 関連（一時ファイルやオーバーライド設定など）
-docker-compose.override.yml
+docker-compose.yml
 *.env.docker
 
 # coverage / テストキャッシュ

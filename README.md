@@ -27,14 +27,7 @@ Firebase 認証、Tailwind CSS、Docker による開発効率化が特徴です�
 以下の動画は GitHub Pages を使ってホスティングしています。  
 再生ボタンを押すとブラウザ上で再生が行えます。
 
-<video
-  src="https://Ai-Togashi.github.io/portfolio/videos/demo.mp4"
-  controls
-  width="640"
-  height="360"
->
-  お使いのブラウザは video タグに対応していません。
-</video>
+[![動画プレビュー](https://Ai-Togashi.github.io/portfolio/videos/demo_thumbnail.jpg)](https://Ai-Togashi.github.io/portfolio/)
 
 ---
 
@@ -82,8 +75,6 @@ Firebase 認証、Tailwind CSS、Docker による開発効率化が特徴です�
 
 ## ディレクトリ構成
 
-以下は、リポジトリの大まかなディレクトリ／ファイル構成です。  
-
 ```bash
 PORTFOLIO/
 ├── .vscode/
@@ -92,18 +83,18 @@ PORTFOLIO/
 │   ├── dist/
 │   ├── node_modules/
 │   ├── prisma/            # Prisma スキーマ・マイグレーション関連ファイル
-│   └── src/
-│       ├── lib/
-│       │   └── prisma.ts
-│       ├── routes/
-│       │   └── inquiry.ts
-│       ├── schemas/
-│       │   └── inquirySchema.ts
-│       ├── services/
-│       │   └── inquiryService.ts
-│       ├── tests/
-│       │   └── inquiryTest.ts
-│       └── server.ts
+│   ├── src/
+│   │   ├── lib/
+│   │   │   └── prisma.ts
+│   │   ├── routes/
+│   │   │   └── inquiry.ts
+│   │   ├── schemas/
+│   │   │   └── inquirySchema.ts
+│   │   ├── services/
+│   │   │   └── inquiryService.ts
+│   │   ├── tests/
+│   │   │   └── inquiryTest.ts
+│   │   └── server.ts
 │   ├── .dockerignore
 │   ├── .env
 │   ├── .gitignore
@@ -114,6 +105,7 @@ PORTFOLIO/
 │   ├── tsconfig.json
 │   └── vitest.config.ts
 ├── docs/                  # GitHub Pages 用ディレクトリ
+│   ├── index.html
 │   ├── index.md
 │   └── videos/
 │       └── demo.mp4       # Pages で動画をホスティングする
@@ -132,6 +124,7 @@ PORTFOLIO/
 │   │   │   │   └── page.tsx
 │   │   │   ├── login/
 │   │   │   │   └── page.tsx
+│   │   │   ├── layout.tsx
 │   │   │   └── page.tsx
 │   │   ├── api/
 │   │   │   ├── contact/
@@ -170,45 +163,38 @@ PORTFOLIO/
 │   │   │   └── app-presentation.mp4
 │   │   ├── placeholder.svg
 │   │   └── styles.css
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── ui/
+│   │   │       ├── button.tsx
+│   │   │       └── card.tsx
+│   │   ├── hooks/
+│   │   │   └── useContents.ts
+│   │   ├── lib/
+│   │   │   ├── firebase-admin.ts
+│   │   │   ├── firebase.ts
+│   │   │   ├── prisma.ts
+│   │   │   ├── styles/
+│   │   │   │     └── (Tailwind など共通スタイル用ファイル)
+│   │   │   └── utils.ts
+│   │   └── utils/
+│   │         └── validateEnv.ts
+│   ├── .env.local
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── eslint.config.mjs
+│   ├── middleware.ts
+│   ├── middleware.ts.bak
+│   ├── next-env.d.ts
 │   ├── next.config.js
 │   ├── tailwind.config.js
 │   ├── postcss.config.js
 │   ├── tsconfig.json
+│   ├── package-lock.json
 │   ├── package.json
 │   └── README.md
-├── src/
-│   ├── components/
-│   │   └── ui/
-│   │       ├── button.tsx
-│   │       └── card.tsx
-│   ├── hooks/
-│   │   └── useContents.ts
-│   ├── lib/
-│   │   ├── firebase-admin.ts
-│   │   ├── firebase.ts
-│   │   ├── prisma.ts
-│   │   ├── styles/
-│   │   │   └── (Tailwind など共通スタイル用ファイル)
-│   │   └── utils.ts
-│   └── utils/
-│       └── validateEnv.ts
-├── .dockerignore
-├── .env                # ルート共通／開発環境用
-├── .env.local          # 各サービス固有の環境変数
 ├── .gitignore
 ├── docker-compose.yml
-├── eslint.config.js
-├── eslint.config.mjs
-├── middleware.ts
-├── middleware.ts.bak
-├── next-env.d.ts
-├── next.config.ts
-├── package-lock.json
-├── package.json
-├── postcss.config.js
-├── tailwind.config.js
-├── tsconfig.json
-├── tsconfig.tsbuildinfo
 └── README.md
 ```
 
