@@ -15,7 +15,7 @@ const linkageApp: Project = {
   description:
     "高齢者と若者をつなぐマッチングアプリ。FlaskとNext.jsを用い、Firebase認証・Stripe決済・Google Maps連携を搭載。",
   imageUrl: "/images/linkage-placeholder.jpg", 
-  githubUrl: "https://github.com/あなたのユーザー名/linkage-app",
+  githubUrl: "https://github.com/Ai-Togashi/Linkageapp.git",
   detailContent: `
 ## Linkageアプリ の詳細
 
@@ -91,7 +91,7 @@ const linkageApp: Project = {
 
 1. リポジトリをクローン  
    \`\`\`bash
-   git clone https://github.com/あなたのユーザー名/linkage-app.git
+   git clone https://github.com/Ai-Togashi/Linkageapp.git
    cd linkage-app
    \`\`\`
 

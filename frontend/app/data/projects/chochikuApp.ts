@@ -15,7 +15,7 @@ const chichikuApp: Project = {
   description:
     "GMOあおぞらネット銀行APIを利用した貯蓄提案アプリ。AWS Lambdaバックエンド・LINE通知連携を備えています。",
   imageUrl: "/images/chochiku-placeholder.jpg", 
-  githubUrl: "https://github.com/あなたのユーザー名/chichiku-app",
+  githubUrl: "https://github.com/Ai-Togashi/chochikuapp.git",
   detailContent: `
 ## ちょちくアプリ の詳細
 
@@ -64,7 +64,7 @@ const chichikuApp: Project = {
 
 1. リポジトリをクローン  
    \`\`\`bash
-   git clone https://github.com/あなたのユーザー名/chochiku-app.git
+   git clone https://github.com/Ai-Togashi/chochikuapp.git
    cd chochiku-app
    \`\`\`
 

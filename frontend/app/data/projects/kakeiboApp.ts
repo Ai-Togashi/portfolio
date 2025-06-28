@@ -15,7 +15,7 @@ const kakeiboApp: Project = {
   description:
     "Next.js（App Router）と Express.js（Prisma）で構築した家計簿アプリ。収支入力・グラフ表示機能を備えています。",
   imageUrl: "/images/kakeibo-placeholder.jpg", 
-  githubUrl: "https://github.com/あなたのユーザー名/kakeibo-app",
+  githubUrl: "https://github.com/Ai-Togashi/kakeiboapp.git",
   detailContent: `
 ## 家計簿アプリ の詳細
 
@@ -59,7 +59,7 @@ const kakeiboApp: Project = {
 
 1. リポジトリをクローン  
    \`\`\`bash
-   git clone https://github.com/あなたのユーザー名/kakeibo-app.git
+   git clone https://github.com/Ai-Togashi/kakeiboapp.git
    cd kakeibo-app
    \`\`\`
 
